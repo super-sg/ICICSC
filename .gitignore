@@ -14,3 +14,11 @@ node_modules/
 scratch/
 extracted_media/
 extracted_docx_content.txt
+
+# Scraper cache & generated data (large, not needed in repo)
+faculty scrapers/cache/
+*.xlsx
+responses.xlsx
+ScienceDirect_Foreign_Authors.xlsx
+Conference_Tracks_Foreign_Authors.xlsx
+icicsc27.xlsx
