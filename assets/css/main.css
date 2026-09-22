@@ -11,30 +11,30 @@
     "Helvetica Neue", Arial, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 
-  --ink: #3D405B;
-  --ink-2: #3D405B;
-  --muted: #5f637c;
-  --muted-2: #81829A;
-  --line: #d8d2bd;
-  --line-strong: #81B29A;
-  --surface: #F4F1DE;
-  --surface-2: #f8e4b9;
-  --surface-3: #F2CC8F;
-  --inverse: #3D405B;
+  --ink: #080910;
+  --ink-2: #1b1e2a;
+  --muted: #4b5563;
+  --muted-2: #6b7280;
+  --line: #e4e7f0;
+  --line-strong: #cfd4e4;
+  --surface: #ffffff;
+  --surface-2: #FAFBFD;
+  --surface-3: #f1f3f9;
+  --inverse: #06070e;
 
   --inferno: #E07A5F;
-  --inferno-bright: #E07A5F;
-  --inferno-deep: #b95f48;
+  --inferno-bright: #F08A6C;
+  --inferno-deep: #B95F48;
   --periwinkle: #81B29A;
   --periwinkle-light: #F2CC8F;
   --periwinkle-deep: #3D405B;
-  --bright-snow: #F4F1DE;
+  --bright-snow: #FAFBFD;
 
   --blue: #3D405B;
   --blue-bright: #E07A5F;
   --violet: #81B29A;
   --red: #E07A5F;
-  --magenta: #E07A5F;
+  --magenta: #B95F48;
   --orange: #F2CC8F;
   --cyan: #81B29A;
   --gold: #F2CC8F;
@@ -147,7 +147,7 @@ hr {
 
 strong, b { color: var(--ink); font-weight: 700; }
 
-::selection { background: #AA0003; color: #FAFBFD; }
+::selection { background: #E07A5F; color: #FAFBFD; }
 
 /* --------------------------------------------------------------------------
    3. Layout helpers
@@ -657,7 +657,7 @@ body.nav-locked { overflow: hidden; }
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: linear-gradient(135deg, #AA0003 0%, #7A69A2 100%);
+  background: linear-gradient(135deg, #E07A5F 0%, #3D405B 100%);
   color: #FAFBFD;
   font-weight: 900;
   font-size: 0.825rem;
@@ -1876,7 +1876,7 @@ textarea.field { min-height: 140px; resize: vertical; }
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #BFB4DC;
+  color: #81B29A;
   white-space: nowrap;
   display: inline-flex;
   align-items: center;
@@ -1889,7 +1889,7 @@ textarea.field { min-height: 140px; resize: vertical; }
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #BFB4DC;
+  background: #81B29A;
   box-shadow: 0 0 10px rgba(191, 180, 220, 0.8);
 }
 
@@ -2064,7 +2064,7 @@ textarea.field { min-height: 140px; resize: vertical; }
 .story-card:hover {
   transform: translateY(-3px);
   z-index: 5;
-  border-color: #D31217;
+  border-color: #E07A5F;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7), 0 0 12px rgba(170, 0, 3, 0.35);
 }
 
@@ -2197,7 +2197,7 @@ textarea.field { min-height: 140px; resize: vertical; }
 .story-card__badge--text {
   font-size: 0.6rem;
   font-weight: 800;
-  color: #BFB4DC !important;
+  color: #81B29A !important;
   border-color: rgba(191, 180, 220, 0.4) !important;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -2242,7 +2242,7 @@ textarea.field { min-height: 140px; resize: vertical; }
 .story-card__desig {
   font-size: 0.65rem;
   font-weight: 600;
-  color: #BFB4DC;
+  color: #81B29A;
   margin: 0 0 0.05rem;
   line-height: 1.15;
   text-align: left !important;
@@ -2278,7 +2278,7 @@ textarea.field { min-height: 140px; resize: vertical; }
 .story-card__country {
   font-size: 0.6rem;
   font-weight: 700;
-  color: #BFB4DC;
+  color: #81B29A;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin: 0;
