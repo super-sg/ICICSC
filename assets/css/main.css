@@ -22,22 +22,22 @@
   --surface-3: #f1f3f9;
   --inverse: #06070e;
 
-  --inferno: #E07A5F;
-  --inferno-bright: #F08A6C;
-  --inferno-deep: #B95F48;
+  --inferno: #81B29A;
+  --inferno-bright: #6FA88D;
+  --inferno-deep: #4F7F68;
   --periwinkle: #81B29A;
-  --periwinkle-light: #F2CC8F;
+  --periwinkle-light: #D9E8D8;
   --periwinkle-deep: #3D405B;
   --bright-snow: #FAFBFD;
 
   --blue: #3D405B;
-  --blue-bright: #E07A5F;
+  --blue-bright: #81B29A;
   --violet: #81B29A;
-  --red: #E07A5F;
-  --magenta: #B95F48;
-  --orange: #F2CC8F;
+  --red: #6FA88D;
+  --magenta: #4F7F68;
+  --orange: #D9E8D8;
   --cyan: #81B29A;
-  --gold: #F2CC8F;
+  --gold: #D9E8D8;
 
   --primary: var(--inferno);
   --accent: var(--inferno-bright);
@@ -46,11 +46,11 @@
   --accent-soft: var(--periwinkle-light);
 
   /* Track colour coding */
-  --t1: #E07A5F;
+  --t1: #81B29A;
   --t2: #81B29A;
   --t3: #3D405B;
-  --t4: #F2CC8F;
-  --t5: #E07A5F;
+  --t4: #6FA88D;
+  --t5: #4F7F68;
   --t6: #81B29A;
   --t7: #3D405B;
 
@@ -147,7 +147,7 @@ hr {
 
 strong, b { color: var(--ink); font-weight: 700; }
 
-::selection { background: #E07A5F; color: #FAFBFD; }
+::selection { background: #81B29A; color: #FAFBFD; }
 
 /* --------------------------------------------------------------------------
    3. Layout helpers
@@ -657,7 +657,7 @@ body.nav-locked { overflow: hidden; }
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: linear-gradient(135deg, #E07A5F 0%, #3D405B 100%);
+  background: linear-gradient(135deg, #81B29A 0%, #3D405B 100%);
   color: #FAFBFD;
   font-weight: 900;
   font-size: 0.825rem;
@@ -2064,7 +2064,7 @@ textarea.field { min-height: 140px; resize: vertical; }
 .story-card:hover {
   transform: translateY(-3px);
   z-index: 5;
-  border-color: #E07A5F;
+  border-color: #81B29A;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7), 0 0 12px rgba(170, 0, 3, 0.35);
 }
 
