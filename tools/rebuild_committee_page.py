@@ -857,6 +857,19 @@ full_html = f"""<!DOCTYPE html>
                       rel="noopener" target="_blank">Scholar search</a>
                   </div>
                 </div>
+                <div class="person">
+                  <img alt="Prof. Dr. Sanjay Misra" class="person__photo" height="520" loading="lazy"
+                    src="https://www.emeraldgrouppublishing.com/sites/default/files/inline-images/Misra%2C%20Sanjay%20-%20ADS_US%20%281%29.jpg" width="520" />
+                  <div class="person__body">
+                    <p class="person__role">General Chair</p>
+                    <p class="person__name">Prof. Dr. Sanjay Misra</p>
+                    <p class="person__desig">Senior Scientist</p>
+                    <p class="person__affil">Institute for Energy Technology, Halden, Norway</p>
+                    <a class="person__link person__link--search"
+                      href="https://scholar.google.com/citations?user=AFjvjTgAAAAJ&amp;hl=en"
+                      rel="noopener" target="_blank">Google Scholar</a>
+                  </div>
+                </div>
               </div>
             </div>
             <div data-people-group="">
