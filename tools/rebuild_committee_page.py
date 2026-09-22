@@ -698,10 +698,10 @@ full_html = f"""<!DOCTYPE html>
           <rect fill="#0a0a0a" height="40" width="40"></rect>
           <path d="M11 11h18M11 11v18M29 11v18M11 29h18M11 11l18 18" opacity=".55" stroke="#ffffff" stroke-width="1.5">
           </path>
-          <circle cx="11" cy="11" fill="#008bff" r="3.6"></circle>
-          <circle cx="29" cy="11" fill="#ff2b37" r="3.6"></circle>
-          <circle cx="11" cy="29" fill="#10b981" r="3.6"></circle>
-          <circle cx="29" cy="29" fill="#d41e85" r="3.6"></circle>
+          <circle cx="11" cy="11" fill="#E30613" r="3.6"></circle>
+          <circle cx="29" cy="11" fill="#F92432" r="3.6"></circle>
+          <circle cx="11" cy="29" fill="#FA4C58" r="3.6"></circle>
+          <circle cx="29" cy="29" fill="#FB747D" r="3.6"></circle>
         </svg>
         <span>
           <span class="brand__name">ICICSC<span>&nbsp;2027</span></span>
