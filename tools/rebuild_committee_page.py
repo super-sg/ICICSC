@@ -79,20 +79,40 @@ iac_cards = [
     ("Italy", "Prof. (Dr.) Yaroslav D. Sergeyev", "Distinguished Professor & Head of Numerical Calculus Lab", "Department of Computer Science, Modeling, Electronics and Systems Engineering", "University of Calabria, Italy", "assets/img/people/yaroslav-d-sergeyev.jpg", "https://scholar.google.com/citations?user=CJQN7wkAAAAJ&hl=en"),
     ("Nigeria", "Dr. Ayodeji Olalekan Salau", "Associate Professor", "Department of Electrical/Electronics and Computer Engineering", "Afe Babalola University, Nigeria", "assets/img/people/ayodeji-olalekan-salau.jpg", "https://scholar.google.com/citations?user=ayodeji-salau"),
     ("Australia", "Prof. (Dr.) Muhammad Imran", "Associate Professor", "School of Engineering, Information Technology and Physical Sciences", "Federation University Australia, Australia", "assets/img/people/muhammad-imran.jpg", "https://scholar.google.com/citations?user=muhammad-imran"),
-    ("USA", "Dr. Biren (Brian) Prasad", "Editor-in-Chief & Executive Director", "AI and Knowledge Engineering", "The Association for the Advancement of Knowledge Solutions (AAKS), USA", "assets/img/people/biren-brian-prasad.jpg", "https://scholar.google.com/citations?user=biren-prasad")
+    ("USA", "Dr. Biren (Brian) Prasad", "Editor-in-Chief & Executive Director", "AI and Knowledge Engineering", "The Association for the Advancement of Knowledge Solutions (AAKS), USA", "assets/img/people/biren-brian-prasad.jpg", "https://scholar.google.com/citations?user=biren-prasad"),
+    ("Romania", "Stefan Cristian Gherghina", "International Advisory Committee Member", "", "Bucharest University of Economic Studies, Romania", "", "https://stefangherghina.ase.ro/"),
+    ("Iran", "Masomeh Kalantarion", "International Advisory Committee Member", "School of Medical Education and Learning Technologies", "Shahid Beheshti University of Medical Sciences, Iran", "", "https://scholar.google.com/citations?user=xje8e_MAAAAJ&hl=en"),
+    ("Iran", "Amin Mansoori", "International Advisory Committee Member", "Department of Applied Mathematics, School of Mathematical Sciences", "Ferdowsi University of Mashhad, Mashhad, Iran", "", "https://scholar.google.com/citations?user=leq9cI0AAAAJ&hl=en"),
+    ("Colombia", "Alvaro David Orjuela-Cañón", "International Advisory Committee Member", "School of Medicine and Health Sciences", "Universidad del Rosario, Colombia", "", "https://scholar.google.com/citations?user=us9b9-EAAAAJ&hl=en")
 ]
+
+iac_extra_links = {
+    "Stefan Cristian Gherghina": [
+        ("Google Scholar ↗", "https://scholar.google.ro/citations?user=uu3SXMEAAAAJ&hl=en")
+    ]
+}
 
 iac_grid_items = []
 for country, name, desig, dept, affil, img, link in iac_cards:
+    media = (
+        f'<img alt="{name}" class="person__photo" loading="lazy" src="{img}" />'
+        if img else
+        f'<span class="person__avatar" aria-hidden="true">{"".join(part[0] for part in name.replace("(", "").split()[:2]).upper()}</span>'
+    )
+    dept_html = f"<p class=\"person__dept\">{dept}</p>" if dept else ""
+    extra_links_html = "".join(
+        f'\n                    <a class="person__link" href="{extra_link}" rel="noopener" target="_blank">{label}</a>'
+        for label, extra_link in iac_extra_links.get(name, [])
+    )
     item = f"""                <div class="person">
-                  <img alt="{name}" class="person__photo" loading="lazy" src="{img}" />
+                  {media}
                   <div class="person__body">
                     <p class="person__role">{country}</p>
                     <p class="person__name">{name}</p>
                     <p class="person__desig">{desig}</p>
-                    <p class="person__dept">{dept}</p>
+                    {dept_html}
                     <p class="person__affil">{affil}</p>
-                    <a class="person__link" href="{link}" rel="noopener" target="_blank">Profile ↗</a>
+                    <a class="person__link" href="{link}" rel="noopener" target="_blank">Profile ↗</a>{extra_links_html}
                   </div>
                 </div>"""
     iac_grid_items.append(item)
@@ -307,6 +327,26 @@ tpc_members_html = """            <div data-people-group="">
                     <p class="person__dept">Department of Cyber Security</p>
                     <p class="person__affil">Jordan University of Science and Technology, Jordan</p>
                     <a class="person__link" href="https://scholar.google.com/citations?user=qasem-abu-alhaija" rel="noopener" target="_blank">Profile ↗</a>
+                  </div>
+                </div>
+                <div class="person">
+                  <span class="person__avatar" aria-hidden="true">CE</span>
+                  <div class="person__body">
+                    <p class="person__role">Nigeria</p>
+                    <p class="person__name">Dr. Christiana Uchenna Ezeanya</p>
+                    <p class="person__desig">Technical Programme Committee Member</p>
+                    <p class="person__affil">National Open University of Nigeria, Nigeria</p>
+                    <a class="person__link" href="https://scholar.google.com/citations?user=0LPyvowAAAAJ&amp;hl=en" rel="noopener" target="_blank">Google Scholar ↗</a>
+                  </div>
+                </div>
+                <div class="person">
+                  <span class="person__avatar" aria-hidden="true">AA</span>
+                  <div class="person__body">
+                    <p class="person__role">Yemen</p>
+                    <p class="person__name">أميرة طه ياسين الأديمي (Amirah Taha Yassin Al-Adeimi)</p>
+                    <p class="person__desig">Technical Programme Committee Member</p>
+                    <p class="person__affil">University of Science and Technology, Yemen</p>
+                    <a class="person__link" href="https://scholar.google.com/citations?user=CXg_Qm8AAAAJ&amp;hl=en" rel="noopener" target="_blank">Google Scholar ↗</a>
                   </div>
                 </div>
               </div>

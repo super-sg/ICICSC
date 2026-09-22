@@ -11,35 +11,33 @@
     "Helvetica Neue", Arial, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 
-  /* Neutrals: Deep Obsidian, Bright Snow (#FAFBFD) & Crisp Whites */
-  --ink: #080910;
-  --ink-2: #1b1e2a;
-  --muted: #4b5563;
-  --muted-2: #6b7280;
-  --line: #e4e7f0;
-  --line-strong: #cfd4e4;
-  --surface: #ffffff;
-  --surface-2: #FAFBFD;
-  --surface-3: #f1f3f9;
-  --inverse: #06070e;
+  --ink: #3D405B;
+  --ink-2: #3D405B;
+  --muted: #5f637c;
+  --muted-2: #81829A;
+  --line: #d8d2bd;
+  --line-strong: #81B29A;
+  --surface: #F4F1DE;
+  --surface-2: #f8e4b9;
+  --surface-3: #F2CC8F;
+  --inverse: #3D405B;
 
-  /* Accents (Bespoke Palette: Inferno #AA0003, Periwinkle #BFB4DC, Bright Snow #FAFBFD) */
-  --inferno: #AA0003;
-  --inferno-bright: #D31217;
-  --inferno-deep: #7D0002;
-  --periwinkle: #BFB4DC;
-  --periwinkle-light: #DDD7EE;
-  --periwinkle-deep: #7A69A2;
-  --bright-snow: #FAFBFD;
+  --inferno: #E07A5F;
+  --inferno-bright: #E07A5F;
+  --inferno-deep: #b95f48;
+  --periwinkle: #81B29A;
+  --periwinkle-light: #F2CC8F;
+  --periwinkle-deep: #3D405B;
+  --bright-snow: #F4F1DE;
 
-  --blue: #AA0003;
-  --blue-bright: #D31217;
-  --violet: #7A69A2;
-  --red: #AA0003;
-  --magenta: #9D3B5A;
-  --orange: #D31217;
-  --cyan: #BFB4DC;
-  --gold: #BFB4DC;
+  --blue: #3D405B;
+  --blue-bright: #E07A5F;
+  --violet: #81B29A;
+  --red: #E07A5F;
+  --magenta: #E07A5F;
+  --orange: #F2CC8F;
+  --cyan: #81B29A;
+  --gold: #F2CC8F;
 
   --primary: var(--inferno);
   --accent: var(--inferno-bright);
@@ -48,13 +46,13 @@
   --accent-soft: var(--periwinkle-light);
 
   /* Track colour coding */
-  --t1: #AA0003;
-  --t2: #7A69A2;
-  --t3: #D31217;
-  --t4: #5D4B85;
-  --t5: #8C0003;
-  --t6: #9D3B5A;
-  --t7: #6B5994;
+  --t1: #E07A5F;
+  --t2: #81B29A;
+  --t3: #3D405B;
+  --t4: #F2CC8F;
+  --t5: #E07A5F;
+  --t6: #81B29A;
+  --t7: #3D405B;
 
   /* Layout */
   --wrap: 1240px;
